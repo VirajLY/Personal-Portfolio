@@ -1,7 +1,11 @@
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
 *{
     margin:0;
     padding: 0;   
     box-sizing: border-box;
+    scroll-behavior: smooth;
     
 }
 body{
@@ -12,6 +16,11 @@ header{
     background-color: black;
     padding: 10px 0px 0px 0px;
     /* border: 2px solid red; */
+    /* position: fixed;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0; */
     
 }
 header h1{
@@ -122,39 +131,153 @@ nav a:hover{
 .projects-heading{
     color:rgb(255, 47, 102) ;
     font-size: 2rem;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 .projects{
-    /* color:aliceblue; */
+    /* border: 1px solid yellow; */
     display: flex;
     justify-content: space-around;
     align-items: center ;
-    margin:5%;
-    column-gap: 15%;
+    margin:0 2.5%;
+    /* column-gap: 15%; */
 }
 .project{
-    border: 1px solid red;
-    width: 350px;
-    height: 300px;
+    border: 1px solid rgb(49, 46, 46);
+    border-radius: 5px;
+    width: 400px;
+    height: 200px;
     color: aliceblue;
     text-align: center;
-    padding-bottom: 20px;
-    /* border-radius: 20px; */
-    margin:1%;
+    margin:1% 0;
+    background-color:rgba(56, 52, 56, 0.326);
+}
+.project:hover{
+    background-color: rgba(255, 0, 102, 0.553);
+    scale: 1.1;
 }
 .project-heading{
-    /* background-color: pink; */
-    width: 350px;
-    height: 100px;
+    /* background-color: rgba(63, 59, 60, 0.545); */
     /* border-radius: 20px 20px 0 0; */
+    width: 400px;
+    height: 100px;
+    /* margin-bottom: 15px; */
+    padding-top: 1rem;  
+    font-size: 1.2rem;
 }
 .project-content{
-    padding: 20px;
-    height: 300px;
+    /* padding: 0 30px; */
+    /* height: 300px; */
+    margin: 0 50px;
+    /* padding-bottom: 10px; */
+    width: 300px;
     text-align: justify;
+    align-items: center;
     font-size: 1.2rem;
-    background-color: rgb(2, 2, 54);
+    /* background-color: rgb(23, 23, 255); */
 }
+.education-heading{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 4rem;
+    margin: 50px 0 100px 0;
+    color: rgb(255, 47, 102);
+}
+.academic{
+    position: relative;
+    height: 420px;
+    /* background-color: green; */
+    display: flex;    
+    justify-content: center;
+    column-gap: 10%;
+}
+.academic-card{
+    /* position: absolute; */
+    width: 250px;
+    height: 290px;
+    transform-style: preserve-3d;
+    transition: all 0s ease-in;
+    
+    
+}
+.academic-card:hover{
+    transform: rotateY(180deg);
+}
+.academic-card-front{
+    position: absolute;
+    width: 250px;
+    height: 290px;
+    backface-visibility: hidden;
+    background: linear-gradient(rgba(24, 24, 149, 0.6),rgba(255, 47, 102,0.5));
+    border: 2px solid rgb(210, 204, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+.academic-card-back{
+    position: absolute;
+    width: 250px;
+    height: 290px;
+    backface-visibility: hidden;
+    background: rgb(238, 212, 212);
+    transform: rotateY(180deg);
+    padding: 40% 0;
+    padding-left: 5%;
+    text-align:left;
+    font-size: 1.2rem;
+}
+
+.research-paper-heading{
+    color: rgb(255, 47, 102);
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 0 100px 0;
+}
+.research-paper-content{
+    color: whitesmoke;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.paper-1,.paper-2{
+    width: 30%;
+    height: 300px;
+    padding-top: 25px;
+    /* border: 1px solid red; */
+}
+.button-click-here{
+    margin-top: 50px;
+    background-color: rgb(255, 47, 102);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+   
+}
+.button-click-here a{
+    text-decoration: none;
+    color: black;
+}
+.button-click-here a:hover{
+    color: rgb(217, 215, 215);
+}
+.footer{
+    color: white;
+    height: 100px;
+    background-color: black;
+    /* background-color: rgb(255, 47, 102); */
+    margin-top: 50px;
+    padding-top: 20px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 
