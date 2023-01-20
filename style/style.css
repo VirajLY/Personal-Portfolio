@@ -78,7 +78,7 @@ nav a:hover{
 } 
 .avatar{
     /* background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.8)),url(/avatar.jpg); */
-    background: linear-gradient(rgba(10, 10, 60, 0.55),rgba(0,0,0,0.8)),url(../avatar.jpg);
+    background: linear-gradient(rgba(10, 10, 60, 0.55),rgba(0,0,0,0.8)),url(/assets/avatar.jpg);
     background-color: rgb(23, 21, 22);
     background-size:cover;
     /* border: 2px solid red; */
@@ -145,7 +145,7 @@ nav a:hover{
 .project{
     border: 1px solid rgb(49, 46, 46);
     border-radius: 5px;
-    width: 400px;
+    width: 380px;
     height: 200px;
     color: aliceblue;
     text-align: center;
@@ -159,7 +159,7 @@ nav a:hover{
 .project-heading{
     /* background-color: rgba(63, 59, 60, 0.545); */
     /* border-radius: 20px 20px 0 0; */
-    width: 400px;
+    width: 370px;
     height: 100px;
     /* margin-bottom: 15px; */
     padding-top: 1rem;  
@@ -272,12 +272,32 @@ nav a:hover{
     /* background-color: rgb(255, 47, 102); */
     margin-top: 50px;
     padding-top: 20px;
+    /* border: 1px solid red; */
 }
 .footer-content{
     display: flex;
     justify-content: space-between;
+    font-size: 1.2rem;
+    margin: 0 3%;
+    font-weight: 100;
 }
-
+.footer-content img{
+    width: 40px;
+    margin: 0 10px;
+    
+}
+.footer-content img:hover{
+    border: 2px solid rgb(255, 47, 102);
+    /* background-color: rgb(255, 47, 102); */
+    border-radius: 30%;
+    box-shadow: 5px 2px  30px rgb(240, 55, 228);    
+}
+.copyright{
+    padding-top: 20px;
+}
+.connect{
+    margin-bottom: 10px;
+}
 
 
 
